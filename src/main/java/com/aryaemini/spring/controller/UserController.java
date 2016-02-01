@@ -11,26 +11,26 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.aryaemini.spring.service.IndexService;
 
 @Controller
-@RequestMapping("/")
-public class IndexController {
+@RequestMapping("users")
+public class UserController {
 
-	private static final Logger logger = Logger.getLogger(IndexController.class);
+	private static final Logger logger = Logger.getLogger(UserController.class);
 
 	@Autowired
-	IndexService indexSvc;
+	IndexService service;
 
 	@RequestMapping(value = "", method = RequestMethod.GET)
-	public String showLanding(ModelMap model) {
+	public String getIndex(ModelMap model) {
 		
-		logger.debug("IndexController is executed");
+		logger.debug("UserController is executed");
 		
-		String foo = indexSvc.getAttributes();
+		String foo = service.getAttributes();
 		
 		model.addAttribute("foo", foo);
 		model.addAttribute("bar", "falan");
 		model.addAttribute("baz", "long");
 
-		return "index";
+		return "users/index";
 	}
 
 }
