@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Arya Emini">
     <spring:url value="/resources/core/css/bootstrap.min.css" var="bootstrapCss" />
-    <link href="${bootstrapCss}" rel="stylesheet" />
+    <link href="${bootstrapCss}" rel="stylesheet">
     <title>Spring Example</title>
   </head>
   <body>
@@ -19,5 +19,9 @@
       <p>${bar}</p>
       <p>${baz}</p>
     </div>
+    <spring:url value="/resources/core/js/jquery.js" var="jqueryJs" />
+    <spring:url value="/resources/core/js/bootstrap.min.js" var="bootstrapJs" />
+    <script src="${jqueryJs}"></script>
+    <script src="${bootstrapJs}"></script>
   </body>
 </html>
