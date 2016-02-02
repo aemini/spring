@@ -24,7 +24,7 @@ public class User {
 	private String middleName;
 
 	@Size(min = 2, max = 20)
-	@Column(name = "middle_name", nullable = false)
+	@Column(name = "family_name", nullable = false)
 	private String familyName;
 
 	public int getId() {
