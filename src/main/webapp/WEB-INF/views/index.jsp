@@ -18,6 +18,7 @@
       <p>${foo}</p>
       <p>${bar}</p>
       <p>${baz}</p>
+      <a href="/spring/users/">Users</a>
     </div>
     <spring:url value="/resources/core/js/jquery.js" var="jqueryJs" />
     <spring:url value="/resources/core/js/bootstrap.min.js" var="bootstrapJs" />

@@ -15,10 +15,8 @@
   </head>
   <body>
     <div class="container">
-      <h1>foo.jsp</h1>
-      <p>${foo}</p>
-      <p>${bar}</p>
-      <p>${baz}</p>
+      <h1>users</h1>
+      <p>${users}</p>
     </div>
     <spring:url value="/resources/core/js/jquery.js" var="jqueryJs" />
     <spring:url value="/resources/core/js/bootstrap.min.js" var="bootstrapJs" />
