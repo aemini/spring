@@ -37,6 +37,12 @@ public class User {
 	@Column(name = "birth_year", nullable = true)
 	private Short birthYear;
 
+	@Column(name = "gender", nullable = true)
+	private String gender;
+
+	@Column(name = "email", nullable = false)
+	private String email;
+
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
 	@Column(name = "created_at", nullable = false)
 	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
@@ -103,6 +109,22 @@ public class User {
 		this.birthYear = year;
 	}
 
+	public String getGender() {
+		return this.gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public LocalDateTime getCreatedAt() {
 		return this.createdAt;
 	}
@@ -125,6 +147,8 @@ public class User {
 				+ ",fullName=" + getFullName()
 				+ ",tckNo=" + tckNo
 				+ ",birthYear=" + birthYear
+				+ ",gender=" + gender
+				+ ",email=" + email
 				+ ",createdAt=" + createdAt
 				+ ",updatedAt=" + updatedAt
 				+ "]";
