@@ -47,24 +47,24 @@
 			<version>${springframework.version}</version>
 		</dependency>
 		<dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-commons</artifactId>
-            <version>1.10.0.RELEASE</version>
-        </dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-commons</artifactId>
+			<version>1.10.0.RELEASE</version>
+		</dependency>
 
-        <!-- Joda-Time -->
-        <dependency>
-            <groupId>joda-time</groupId>
-            <artifactId>joda-time</artifactId>
-            <version>${joda-time.version}</version>
-        </dependency>
+		<!-- Joda-Time -->
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>${joda-time.version}</version>
+		</dependency>
 
-        <!-- To map JodaTime with database type -->
-        <dependency>
-            <groupId>org.jadira.usertype</groupId>
-            <artifactId>usertype.core</artifactId>
-            <version>3.0.0.CR1</version>
-        </dependency>
+		<!-- To map JodaTime with database type -->
+		<dependency>
+			<groupId>org.jadira.usertype</groupId>
+			<artifactId>usertype.core</artifactId>
+			<version>3.0.0.CR1</version>
+		</dependency>
 
 		<!-- Servlet+JSP+JSTL -->
 		<dependency>
@@ -160,32 +160,6 @@
 						<target>1.7</target>
 					</configuration>
 				</plugin>
-				<!--
-				<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-dependency-plugin</artifactId>
-    <executions>
-        <execution>
-            <id>unpack</id>
-            <phase>compile</phase>
-            <goals>
-                 <goal>unpack</goal>
-            </goals>
-            <configuration>
-                 <artifactItems>
-                      <artifactItem>
-                          <groupId>org.webjars</groupId>
-                          <artifactId>bootstrap</artifactId>
-                          <overWrite>false</overWrite>
-                          <outputDirectory>${project.build.directory}/classes</outputDirectory>
-                          <excludes>**/maven/**, **/*.MF</excludes>
-                      </artifactItem>
-                 </artifactItems>
-            </configuration>
-        </execution>
-    </executions>
-</plugin>
--->
 			</plugins>
 		</pluginManagement>
 		<finalName>spring</finalName>
